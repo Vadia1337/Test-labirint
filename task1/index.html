@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<!--
+Задание 1 «Погода и курс валют»
+Краткое описание: HTML страница отображающая курс валют и погоду в Москве, на текущий момент.
+Пример внешнего вида: Макет
+(https://www.figma.com/file/pdnZndaO3ZlKn3rvBhHFdy/Untitled?node-id=0%3A1)
+Список валют: Доллар США, Евро, Шведских крон, Японских иен, Канадский доллар
+Для получение курса использовать - http://www.cbr.ru/development/sxml/
+Для получения погоды использовать можно использовать любое API (Например: https://openweathermap.org/api или https://www.weatherapi.com/ )
+Так же на странице должна присутствовать кнопка, для обновления информации по AJAX
+-->
+
+<html style="font-size: 16px;" lang="ru">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta id="csrftoken" name="csrf-token" content="">
+    <title>Главная</title>
+    <link rel="stylesheet" href="assets/np.css" media="screen">
+    <link rel="stylesheet" href="assets/main.css" media="screen">
+    <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
+  </head>
+  <body class="u-body u-xl-mode">
+    <section class="u-clearfix u-section-1" id="sec-f909">
+      <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+        <div class="u-align-center u-container-style u-grey-5 u-group u-radius-47 u-shape-round u-group-1">
+          <div class="u-container-layout u-container-layout-1">
+            <p id="weather-city" class="u-text u-text-1"></p>
+            <p id="weather-date" class="u-text u-text-2"></p>
+            <p class="u-text u-text-3">Темпе​ратура</p>
+            <p id="weather-temp" class="u-text u-text-4"></p>
+            <p id="weather-f-temp" class="u-text u-text-5"></p>
+            <p class="u-text u-text-6">Ощущается как</p>
+            <p id="weather-description" class="u-text u-text-7"></p>
+          </div>
+        </div>
+        <div class="u-align-left u-container-style u-grey-5 u-group u-radius-47 u-shape-round u-group-2 updatedata">
+          <div class="u-container-layout u-valign-middle u-container-layout-2 updatedata">
+            <span class="u-file-icon u-icon u-icon-1">
+              <img class="updatedata" src="assets/875100.png" alt="Обновление данных">
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="u-clearfix u-section-2">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <div class="u-list u-list-1">
+          <div id="setcurrs" class="u-repeater u-repeater-1">
+
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    
+    <footer class="u-align-center u-clearfix u-footer u-grey-80 u-footer" id="sec-918e">
+        <div class="u-clearfix u-sheet u-sheet-1">
+           <p class="u-small-text u-text u-text-variant u-text-1"> Погода и курс валют</p>
+        </div>
+    </footer>
+
+
+    <script src="assets/main.js"></script>
+  
+</body></html>
