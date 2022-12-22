@@ -55,12 +55,12 @@ class Currency{
 // класс погоды
 class Weather{
 
+    public static $city = "Moscow";
+    public static $appid = "44129d2d29f44e478a21c3183ff76da8";
+
     public function Get_Weather(){
 
-        $city = "Moscow";
-        $appid = "44129d2d29f44e478a21c3183ff76da8";
-
-        $answer = json_decode(file_get_contents('https://api.openweathermap.org/data/2.5/weather?q='.$city.'&appid='.$appid.'&lang=ru&units=metric'));
+        $answer = json_decode(file_get_contents('https://api.openweathermap.org/data/2.5/weather?q='.self::$city.'&appid='.self::$appid.'&lang=ru&units=metric'));
 
 
         $weather = array(
