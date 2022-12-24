@@ -17,6 +17,8 @@ class News extends Model
         'tags',
     ];
 
+    // магические методы не использовались.
+
     public function getId(){
         return $this->id;
     }

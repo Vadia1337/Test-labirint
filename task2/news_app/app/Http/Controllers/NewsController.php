@@ -14,7 +14,7 @@ class NewsController extends Controller
     public function CreateNews(){
         return view('NewsTemplate', ['action' => 'create']);
     }
-
+    
     public function RegisterNews(Request $request){
         // валидация
         $news = new News();
