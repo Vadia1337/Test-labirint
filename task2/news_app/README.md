@@ -7,4 +7,8 @@
 
 также поиск осуществляется по таким запросам:
 ![Screenshot_4](https://user-images.githubusercontent.com/51534349/209213565-1df429fe-62ef-4fe3-8c7d-17936cb88fb8.png)
+<<<<<<< HEAD
 ![Screenshot_5](https://user-images.githubusercontent.com/51534349/209213566-fdc29512-93e9-4e44-872e-0eb4595f3c18.png)
+=======
+![Screenshot_5](https://user-images.githubusercontent.com/51534349/209213566-fdc29512-93e9-4e44-872e-0eb4595f3c18.png)
+>>>>>>> d8e263fdbeac06bd26d24d9f4a6163c0728ef4b3
